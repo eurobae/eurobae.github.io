@@ -108,9 +108,9 @@ author:
   location         : "Seoul, Korea"
   email            :
   links:
-    - label: "Email"
+    - label: "eurobae@kaist.ac.kr"
       icon: "fas fa-fw fa-envelope-square"
-      url: "eurobae@kaist.ac.kr" #"mailto:eurobae@kaist.ac.kr"
+      url: "mailto:eurobae@kaist.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
