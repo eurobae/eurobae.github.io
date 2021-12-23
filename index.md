@@ -4,3 +4,14 @@ author_profile: true
 ---
 
 I am a third-year PhD student in Information Systems at KAIST College of Business.
+
+
+### Working Papers
+* **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Incentives Thrive as Their Prices Rise? Evidence from a Ride-Hailing Platform"
+* Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Role of Stablecoins: Evidence from OpenSea"
+
+### Conference & Workshop Presentations
+* **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2021). "Cryptocurrency-Based Incentives and Digital Platforms," _Bright Internet Global Summit_ (BIGS), Virtual, December 2021
+* **Euro Bae**, Jaywon Lee, Daegon Cho. (2020). "You are Happy If We Are Happy: Empirical Evidence on Tokenomics from an ICO Platform," INFORMS _Conference on Information Systems & Technology_ (CIST), Virtual, November 2020
+* **Euro Bae**, Daegon Cho. (2019). "Do Token Incentives Work? An Empirical Study in a Ride-Hailing Platform," _International Conference on Information Systems_ (ICIS), Munich, Germany, December 2019
+* **Euro Bae**, Daegon Cho. (2019). "Non-Green Investors Predict Green Stocks Better: Empirical Evidence from StockTwits," _International Conference on Electronic Commerce_ (ICEC), Busan, Korea, July 2019
