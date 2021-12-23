@@ -103,14 +103,14 @@ analytics:
 # Site Author
 author:
   name             : "Euro Bae"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile9.jpeg"
   bio              : "I am a PhD student at KAIST College of Business."
   location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:eurobae@kaist.ac.kr"
+      url: "eurobae@kaist.ac.kr" #"mailto:eurobae@kaist.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -125,7 +125,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/eurobae"
 
 # Site Footer
 footer:
