@@ -1,6 +1,7 @@
 ---
 layout: home
 author_profile: true
+classes: wide
 ---
 
 Welcome to my blog!
