@@ -21,4 +21,4 @@ My research explores how the growing cryptocurrency market and fintech industry 
 * **Euro Bae**, Daegon Cho. (2019). "Non-Green Investors Predict Green Stocks Better: Empirical Evidence from StockTwits," _International Conference on Electronic Commerce_ (ICEC), Busan, Korea, July 2019
 
 ### Other Publications
-* Chihong Jeon, Euro Bae, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/board.php?bo_table=B34_1)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
+* Chihong Jeon, Euro Bae, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/download.php?bo_table=B34_1&wr_id=9&no=1) (_in Korean_)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
