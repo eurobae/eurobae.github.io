@@ -288,3 +288,17 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
