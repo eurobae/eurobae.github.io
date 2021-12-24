@@ -17,5 +17,8 @@ My research explores how the growing cryptocurrency market and fintech industry 
 ### Conference & Workshop Presentations
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2021). "Cryptocurrency-Based Incentives and Digital Platforms," _Bright Internet Global Summit_ (BIGS), Virtual, December 2021
 * **Euro Bae**, Jaywon Lee, Daegon Cho. (2020). "You are Happy If We Are Happy: Empirical Evidence on Tokenomics from an ICO Platform," INFORMS _Conference on Information Systems & Technology_ (CIST), Virtual, November 2020
-* **Euro Bae**, Daegon Cho. (2019). "Do Token Incentives Work? An Empirical Study in a Ride-Hailing Platform," _International Conference on Information Systems_ (ICIS), Munich, Germany, December 2019
+* **Euro Bae**, Daegon Cho. (2019). "[Do Token Incentives Work? An Empirical Study in a Ride-Hailing Platform](https://aisel.aisnet.org/icis2019/blockchain_fintech/blockchain_fintech/5/)," _International Conference on Information Systems_ (ICIS), Munich, Germany, December 2019
 * **Euro Bae**, Daegon Cho. (2019). "Non-Green Investors Predict Green Stocks Better: Empirical Evidence from StockTwits," _International Conference on Electronic Commerce_ (ICEC), Busan, Korea, July 2019
+
+### Other Publications
+* Chihong Jeon, Euro Bae, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/board.php?bo_table=B34_1)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
