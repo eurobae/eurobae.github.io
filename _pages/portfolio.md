@@ -9,4 +9,3 @@ entries_layout: grid
 classes: wide
 ---
 
-Test
