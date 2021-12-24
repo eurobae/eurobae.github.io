@@ -1,5 +1,5 @@
 ---
-permalink: /projects
+permalink: /projects/
 layout: single
 last_modified_at: 2021-12-25
 ---
