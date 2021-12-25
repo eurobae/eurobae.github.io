@@ -4,9 +4,9 @@ author_profile: true
 classes: wide
 ---
 
-Welcome to my blog!
+Hello!
 
-I am a third-year PhD student in Information Systems at KAIST College of Business. Previously I received a Master's from the same college and a Bachelor's in Industrial and Management Engineering at POSTECH.
+I am a third-year PhD student in Information Systems at KAIST College of Business, Seoul. Previously I received a Master's from the same college and a Bachelor's in Industrial and Management Engineering at POSTECH. Spent more than two-thirds of my life in schools, I am still learning who I am and how to create values and ideas for us.
 
 My research explores how the growing cryptocurrency market and fintech industry can innovate platform businesses by blurring the distinction between professional investors and conventional users. Below is a list of ongoing work.
 
