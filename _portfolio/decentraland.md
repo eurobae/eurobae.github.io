@@ -1,8 +1,9 @@
 ---
+title: "Decentraland Analytics"
 last_modified_at: 2021-12-25
 classes: wide
+excerpt: "Will people spend more time in Decentraland?"
 header:
-  title: "Decentraland Analytics"
   teaser: "/assets/images/lands_181920.png"
 ---
 
