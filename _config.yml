@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Euro Bae"
   avatar           : "/assets/images/profile9.jpeg"
-  bio              : "PhD Student in Information Systems"
-  location         : "Seoul, Korea"
+  bio              : "Just another hard working Korean PhD Student in Information Systems"
+  location         : "Seoul"
   email            :
   links:
     - label: "eurobae@kaist.ac.kr"

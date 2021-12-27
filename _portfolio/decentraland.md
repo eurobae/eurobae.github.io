@@ -2,6 +2,8 @@
 title: "Decentraland Analytics"
 last_modified_at: 2021-12-25
 classes: wide
+header:
+	teaser: "/assets/images/lands_181920.png"
 ---
 
 <img src="/assets/images/lands_181920.png" alt="surface-graph" width="700"/>
