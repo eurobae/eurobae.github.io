@@ -8,7 +8,9 @@ Hello!
 
 I am a third-year PhD student in Information Systems at KAIST College of Business, Seoul. Previously I received a Master's from the same college and a Bachelor's in Industrial and Management Engineering at POSTECH. Spent more than two-thirds of my life in schools, I am still learning who I am and how to create ideas and values for us.
 
-Even though it takes time and is difficult, I always try my best to be clear and precise, and so does my research. My research explores how the growing cryptocurrency market and blockchain technology can innovate platform businesses by blurring the distinction between professional investors and conventional users. Below is a list of ongoing work.
+Even though it takes time and is difficult, I always try my best to be clear and precise, and so does my research. My research explores how the growing cryptocurrency market and blockchain technology can innovate platform businesses by blurring the distinction between professional investors and conventional users. Specifically, platforms can now easily list their own currencies on multiple exchanges to be freely trading, and blockchains make all the transactions traceable and immutable.
+
+Below is a list of ongoing work.
 
 
 ### Working Papers
