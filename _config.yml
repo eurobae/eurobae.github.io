@@ -288,11 +288,24 @@ defaults:
       comments: # true
       share: true
       related: true
-
+  # _references
+  - scope:
+      path: ""
+      type: references
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Collections
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  references:
     output: true
     permalink: /:collection/:path/
 
