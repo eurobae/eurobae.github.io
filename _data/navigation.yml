@@ -12,3 +12,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# referenes
+references:
+  - title: References
+    children:
+      - title: "Maximum Likelihood Estimation"
+        url: /references/mle/
