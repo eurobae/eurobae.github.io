@@ -1,6 +1,7 @@
 ---
 title: "Maximum Likelihood Estimation"
 permalink: /references/mle/
+layout: single
 last_modified_at: 2022-01-01
 classes: wide
 ---
