@@ -8,4 +8,4 @@ entries_layout: grid
 classes: wide
 ---
 
-A list of portfolio.
+A list of portfolio done by myself.
