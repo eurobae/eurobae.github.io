@@ -3,6 +3,7 @@ title: References
 permalink: /references/
 author_profile: true
 layout: archive
+collection: references
 classes: wide
 ---
 
