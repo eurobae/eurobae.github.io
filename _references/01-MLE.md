@@ -6,7 +6,9 @@ classes: wide
 toc: true
 ---
 
-본 포스트는 Rice University의 Richard W. Evans가 2018년 7월 QuantEcon에 게시한 [Maximum Likelihood Estimation](https://notes.quantecon.org/submission/5b3b102eb9eab00015b89f8e)를 바탕으로 만들어졌습니다.
+본 포스트는 Rice University의 Richard W. Evans가 2018년 7월 QuantEcon에 게시한 [Maximum Likelihood Estimation](https://notes.quantecon.org/submission/5b3b102eb9eab00015b89f8e){: target="_blank"}를 바탕으로 만들어졌습니다.
+
+<br>
 
 # 1. General Characterization of a Model and Data Generating Process
 
@@ -14,25 +16,20 @@ Maximum Likelihood Estimation(MLE), 그리고 이후 포스트에서 다룰 Gene
 
 <br>
 
-# 2. Data and Likelihood
+# 2. Comparions of Data and Distributions
 
 
 ```python
 import pandas as pd
 import numpy as np
-import scipy.stats as sts
-import requests
-
 import matplotlib.pyplot as plt
 ```
 
 
 ```python
 # Econ381totpts.txt 데이터 불러오기
-url = ('https://raw.githubusercontent.com/rickecon/Notebooks/' +
-       'master/MLE/data/Econ381totpts.txt')
-data = pd.read_csv(url, header=None, names=["points"])
-# data.points.to_numpy()
+data = pd.read_csv("https://raw.githubusercontent.com/rickecon/Notebooks/master/MLE/data/Econ381totpts.txt",
+                   header=None, names=["points"])
 data
 ```
 
@@ -126,21 +123,77 @@ plt.show()
 
 
     
-![png](output_9_0.png)
+![png]("output_10_0.png")
     
 
 
+데이터에서 보여진 분포와 유사할 것으로 생각되는 Truncated Normal 분포 2개를 생성해 보겠습니다.
+
 
 ```python
-
+import scipy.stats as sts
 ```
 
 
 ```python
-
+# Truncated Normal distribution pdf 생성 함수
+def trunc_norm_pdf(xvals, mu, sigma, cutoff=None):
+    if cutoff is None:
+        prob_notcut = 1.0
+    else:
+        prob_notcut = sts.norm.cdf(cutoff, loc=mu, scale=sigma)
+        
+    pdf_vals = 1 / (sigma * np.sqrt(2*np.pi)) * np.exp(- (xvals-mu)**2 / (2*sigma**2) / prob_notcut)
+    return pdf_vals
 ```
 
 
 ```python
+dist_pts = np.linspace(0,450,500)
 
+mu_1, sig_1 = 300, 30
+plt.plot(dist_pts, trunc_norm_pdf(dist_pts, mu_1, sig_1, 450),
+         linewidth=2, label="#1: $\mu$=300, $\sigma$=30")
+
+mu_2, sig_2 = 400, 60
+plt.plot(dist_pts, trunc_norm_pdf(dist_pts, mu_2, sig_2, 450),
+         linewidth=2, label="#2: $\mu$=400, $\sigma$=60")
+
+plt.legend()
+plt.show()
+```
+
+
+    
+![png](output_14_0.png)
+    
+
+
+두 Normal 분포에 대해서 Log-Likelihood를 계산해 보겠습니다.
+
+
+```python
+def log_lik_norm(xvals, mu, sigma, cutoff=None):
+    pdf_vals = trunc_norm_pdf(xvals, mu, sigma, cutoff)
+    log_lik_val = np.log(pdf_vals).sum()
+    return log_lik_val
+```
+
+
+```python
+print("Log-likelihood #1:", log_lik_norm(data.values, mu_1, sig_1, 450))
+print("Log-likelihood #2:", log_lik_norm(data.values, mu_2, sig_2, 450))
+```
+
+    Log-likelihood #1: -1552.807742613499
+    Log-likelihood #2: -1121.180734031188
+    
+
+<br>
+
+# 3. Solving a Maximization (or Minimization) Problem
+
+
+```python
+import scipy.optimize as opt
 ```
