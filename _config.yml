@@ -319,3 +319,10 @@ collections:
   references:
     output: true
     permalink: /:collection/:path/
+
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
