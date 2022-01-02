@@ -124,6 +124,7 @@ plt.show()
 
     
 ![png]("/assets/references/mle_01.png")
+<img src="/assets/references/mle_01.png">
 
 
 데이터에서 보여진 분포와 유사할 것으로 생각되는 Truncated Normal 분포 2개를 생성해 보겠습니다.
@@ -165,7 +166,7 @@ plt.show()
 
     
 ![png]("/assets/references/mle_02.png")
-    
+<img src="/assets/references/mle_02.png">
 
 
 두 Normal 분포에 대해서 Log-Likelihood를 계산해 보겠습니다.
