@@ -6,17 +6,19 @@ classes: wide
 toc: true
 ---
 
-본 포스트는 Rice University의 Richard W. Evans가 2018년 7월 QuantEcon에 게시한 [Maximum Likelihood Estimation](https://notes.quantecon.org/submission/5b3b102eb9eab00015b89f8e){: target="_blank"}를 바탕으로 만들어졌습니다.
+본 포스트는 Rice University의 Richard W. Evans가 2018년 7월 QuantEcon에 게시한 [Maximum Likelihood Estimation](https://notes.quantecon.org/submission/5b3b102eb9eab00015b89f8e){: target="_blank"}을 기본적으로 번역하되, 필요에 따라 일부 내용을 수정하거나 추가적인 내용들을 덧붙이면서 만들어졌습니다.
 
 <br>
 
-# 1. General Characterization of a Model and Data Generating Process
+# 1. Maximum Likelihood Estimation
 
-Maximum Likelihood Estimation(MLE), 그리고 이후 포스트에서 다룰 Generalized Method of Moments(GMM)와 Simulated Method of Moments(SMM) 추정법들은 데이터의 특성들 중 일부를 설명하기 위해 모델 파라미터의 값을 
+MLE 추정법은 우리가 관측하는 데이터가 어떤 미지의 특정 확률 분포를 따를 것이라는 아주 강한 가정에 기초합니다. 따라서 MLE의 목표는 데이터를 이용해서 바로 그 확률 분포가 어떻게 생겼을지 추론하는 데 있고, 그 과정에서 이를테면 분포의 평균이나 분산과 같은 파라미터 $\theta$를 추정하게 됩니다.
+
+추정 방식은 이름에서 알 수 있듯이 Likelihood 함수를 최대화하는 $\theta$를 찾도록 전개됩니다.
 
 <br>
 
-# 2. Comparions of Data and Distributions
+# 2. Comparing Observed Data and Distributions
 
 
 ```python
@@ -123,8 +125,8 @@ plt.show()
 
 
     
-![png]("/assets/references/mle_01.png")
 <img src="/assets/references/mle_01.png">
+    
 
 
 데이터에서 보여진 분포와 유사할 것으로 생각되는 Truncated Normal 분포 2개를 생성해 보겠습니다.
@@ -165,8 +167,8 @@ plt.show()
 
 
     
-![png]("/assets/references/mle_02.png")
 <img src="/assets/references/mle_02.png">
+    
 
 
 두 Normal 분포에 대해서 Log-Likelihood를 계산해 보겠습니다.
