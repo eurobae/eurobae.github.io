@@ -4,6 +4,8 @@ permalink: /references/mle/
 last_modified_at: 2022-01-01
 classes: wide
 toc: true
+use_math: true
+comments: true
 ---
 
 본 포스트는 Rice University의 Richard W. Evans가 2018년 7월 QuantEcon에 게시한 [Maximum Likelihood Estimation](https://notes.quantecon.org/submission/5b3b102eb9eab00015b89f8e){: target="_blank"}을 기본적으로 번역하되, 필요에 따라 일부 내용을 수정하거나 추가적인 내용들을 덧붙이면서 만들어졌습니다.
