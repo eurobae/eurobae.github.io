@@ -123,8 +123,7 @@ plt.show()
 
 
     
-![png]("/_references/output_10_0.png")
-<img src="/_references/output_10_0.png">
+![png]("/assets/references/mle_01.png")
 
 
 데이터에서 보여진 분포와 유사할 것으로 생각되는 Truncated Normal 분포 2개를 생성해 보겠습니다.
@@ -165,7 +164,7 @@ plt.show()
 
 
     
-![png]("/_references/output_14_0.png")
+![png]("/assets/references/mle_02.png")
     
 
 
