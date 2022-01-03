@@ -13,9 +13,9 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-# referenes
-references:
-  - title: References
-    children:
-      - title: "Maximum Likelihood Estimation"
-        url: /references/mle/
+# references
+# references:
+#   - title: References
+#     children:
+#       - title: "Maximum Likelihood Estimation"
+#         url: /references/mle/
