@@ -41,14 +41,14 @@ $L(\theta)$나 $l(\theta)$를 극대화하는 $\theta$를 찾을 때 깔끔한 a
 우선 Normal 분포를 시작으로 analytical solution이 있는 경우를 살펴보도록 하겠습니다. 평균이 $\mu$, 분산이 $\sigma^2$인 Normal 분포의 PDF는 다음과 같이 주어집니다.
 
 \begin{equation}
-    f(x_i | \mu, \sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} \exp{\Big\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \Big\}}
+    f(x_i | \mu, \sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} \exp{\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \}}
 \end{equation}
 
 위에서 정의된 대로 $N$개의 관측치에 대해 $l(\mu,\sigma^2)$는 다음과 같습니다.
 
 \begin{split}
     l(\mu,\sigma^2)
-    &= \sum_{i=1}^{N}{ \ln{\Big( \frac{1}{\sigma\sqrt{2\pi}} \exp{\Big\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \Big\}} \Big)} } \\
+    &= \sum_{i=1}^{N}{ \ln{( \frac{1}{\sigma\sqrt{2\pi}} \exp{\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \}} )} } \\
     &= -N \ln{\sigma} - \frac{N}{2} \ln{2\pi} - \frac{1}{2\sigma^2} \sum_{i=1}^{N}{(x_i-\mu)^2}
 \end{split}
 
