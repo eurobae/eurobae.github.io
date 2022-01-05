@@ -18,25 +18,49 @@ MLE 추정법은 우리가 관측하는 데이터가 어떤 미지의 특정 확
 
 구체적인 추정 방식은 이름에서 알 수 있듯이 likelihood function $L(\theta)$를 극대화하는 $\hat \theta$를 찾도록 전개됩니다. Likelihood는 데이터가 관찰되었을 때 미지의 분포의 파라미터가 $\theta$일 가능성을 뜻하며, 달리 말하면 관측된 데이터가 특정 $\theta$에서 나왔을 확률입니다.
 
-예를 들어 연속형 랜덤 변수 $X$가 $\theta$에 의존하는 $f$라는 probability density function을 가진다면, $X=x$라는 하나의 값이 관찰될 때 다음과 같이 likelihood function을 정의할 수 있습니다. (이산형 랜덤 변수라면 probability mass function이겠고요.)
+예를 들어 연속형 랜덤 변수 $X$가 $\theta$에 의존하는 $f$라는 PDF(probability density function)를 가진다면, $X=x$라는 하나의 값이 관찰될 때 다음과 같이 likelihood function을 정의할 수 있습니다. (이산형 랜덤 변수라면 probability mass function이겠고요.)
 
 \begin{equation}
     L(\theta | x) = f(x | \theta)
 \end{equation}
 
-그리고 관측치가 $(x_1, ..., x_n)$과 같이 $n$개라면 $L(\theta)$는 probability density function의 곱으로 표현됩니다.
+그리고 i.i.d인 관측치가 $(x_1, ..., x_N)$과 같이 $N$개라면 $L(\theta)$는 PDF의 곱으로 표현됩니다.
 
 \begin{equation}
-    L(\theta | x_1, ..., x_n) = \prod_{i=1}^{n} {f(x_i | \theta)}
+    L(\theta | x_1, ..., x_N) = \prod_{i=1}^{N} {f(x_i | \theta)}
 \end{equation}
 
-Log가 strictly increasing function이기 때문에 $L(\theta)$를 극대화하는 것과 $L(\theta)$를 log 변환한 log-likelihood function $l(\theta)$을 극대화하는 것은 동치입니다. $l(\theta)$는 아래와 같이 곱이 아닌 합으로 표현되겠습니다. ([Log-likelihood가 유리한 이유](https://stats.stackexchange.com/questions/70972/why-we-always-put-log-before-the-joint-pdf-when-we-use-mlemaximum-likelihood/70975#70975){: target="_blank"})
+Log가 strictly increasing function이기 때문에 $L(\theta)$를 극대화하는 것과 $L(\theta)$를 log 변환한 log-likelihood function $l(\theta)$를 극대화하는 것은 동치입니다. $l(\theta)$는 아래와 같이 곱이 아닌 합으로 표현되겠습니다. ([Log-likelihood가 유리한 이유](https://stats.stackexchange.com/questions/70972/why-we-always-put-log-before-the-joint-pdf-when-we-use-mlemaximum-likelihood/70975#70975){: target="_blank"})
 
 \begin{equation}
-    l(\theta | x_1, ..., x_n) = \sum_{i=1}^{n} {\ln{f(x_i | \theta)}}
+    l(\theta | x_1, ..., x_N) = \sum_{i=1}^{N} {\ln{f(x_i | \theta)}}
 \end{equation}
 
 $L(\theta)$나 $l(\theta)$를 극대화하는 $\theta$를 찾을 때 깔끔한 analytical solution이 있으면 좋겠지만, 없는 경우에는 Newton-Raphson algorithm과 같은 numerical method가 필요합니다.
+
+우선 Normal 분포를 시작으로 analytical solution이 있는 경우를 살펴보도록 하겠습니다. 평균이 $\mu$, 분산이 $\sigma^2$인 Normal 분포의 PDF는 다음과 같이 주어집니다.
+
+\begin{equation}
+    f(x_i | \mu, \sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} \exp{\Big\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \Big\}}
+\end{equation}
+
+위에서 정의된 대로 $N$개의 관측치에 대해 $l(\mu,\sigma^2)$는 다음과 같습니다.
+
+\begin{split}
+    l(\mu,\sigma^2)
+    &= \sum_{i=1}^{N}{ \ln{\Big( \frac{1}{\sigma\sqrt{2\pi}} \exp{\Big\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \Big\}} \Big)} } \\
+    &= -N \ln{\sigma} - \frac{N}{2} \ln{2\pi} - \frac{1}{2\sigma^2} \sum_{i=1}^{N}{(x_i-\mu)^2}
+\end{split}
+
+이어서 $l(\mu,\sigma^2)$를 극대화하는 $\mu$를 찾기 위해 FOC를 풀면 아래와 같이 $\hat{\mu}$를 구할 수 있습니다.
+
+\begin{equation}
+    \frac{\partial}{\partial\mu} l(\mu,\sigma^2) = \frac{1}{\sigma^2} \sum_{i=1}^{N}{(x_i-\mu)} = 0
+\end{equation}
+
+\begin{equation}
+    \hat{\mu} = \frac{1}{N} \sum_{i=1}^{N}{x_i}
+\end{equation}
 
 <br>
 
