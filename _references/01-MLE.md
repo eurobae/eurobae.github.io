@@ -16,7 +16,7 @@ comments: true
 
 MLE 추정법은 우리가 관측하는 데이터가 어떤 미지의 특정 확률 분포를 따를 것이라는 강한 가정에 기초합니다. MLE의 목표는 데이터를 이용해서 바로 그 확률 분포가 어떻게 생겼을지 추론하는 데 있고, 이를테면 분포의 평균이나 분산과 같은 파라미터 $\theta$를 pin down합니다.
 
-구체적인 추정 방식은 이름에서 알 수 있듯이 likelihood function $L(\theta)$를 최대화하는 $\hat \theta$를 찾도록 전개됩니다.
+구체적인 추정 방식은 이름에서 알 수 있듯이 likelihood function $L(\theta)$를 극대화하는 $\hat \theta$를 찾도록 전개됩니다. Likelihood는 데이터가 관찰되었을 때 미지의 분포의 파라미터가 $\theta$일 가능성을 뜻하며, 달리 말하면 관측된 데이터가 특정 $\theta$에서 나왔을 확률입니다.
 
 예를 들어 연속형 랜덤 변수 $X$가 $\theta$에 의존하는 $f$라는 probability density function을 가진다면, $X=x$라는 하나의 값이 관찰될 때 다음과 같이 likelihood function을 정의할 수 있습니다. (이산형 랜덤 변수라면 probability mass function이겠고요.)
 
@@ -30,7 +30,7 @@ MLE 추정법은 우리가 관측하는 데이터가 어떤 미지의 특정 확
     L(\theta | x_1, ..., x_n) = \prod_{i=1}^{n} {f(x_i | \theta)}
 \end{equation}
 
-Log가 strictly increasing function이기 때문에 $L(\theta)$를 최대화하는 것과 $L(\theta)$를 log 변환한 log-likelihood function $l(\theta)$을 최대화하는 것은 동치입니다. $l(\theta)$는 아래와 같이 곱이 아닌 합으로 표현됩니다. ([Log-likelihood가 유리한 이유](https://stats.stackexchange.com/questions/70972/why-we-always-put-log-before-the-joint-pdf-when-we-use-mlemaximum-likelihood/70975#70975){: target="_blank"})
+Log가 strictly increasing function이기 때문에 $L(\theta)$를 극대화하는 것과 $L(\theta)$를 log 변환한 log-likelihood function $l(\theta)$을 극대화하는 것은 동치입니다. $l(\theta)$는 아래와 같이 곱이 아닌 합으로 표현되겠습니다. ([Log-likelihood가 유리한 이유](https://stats.stackexchange.com/questions/70972/why-we-always-put-log-before-the-joint-pdf-when-we-use-mlemaximum-likelihood/70975#70975){: target="_blank"})
 
 \begin{equation}
     l(\theta | x_1, ..., x_n) = \sum_{i=1}^{n} {\ln{f(x_i | \theta)}}
@@ -217,4 +217,3 @@ print("Log-likelihood #2:", log_lik_norm(data.values, mu_2, sig_2, 450))
 
 Also see
 - https://python.quantecon.org/mle.html
-- https://www.stat.cmu.edu/~cshalizi/mreg/15/lectures/04/lecture-04.pdf
