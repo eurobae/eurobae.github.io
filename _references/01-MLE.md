@@ -38,21 +38,24 @@ Log가 strictly increasing function이기 때문에 $L(\theta)$를 극대화하�
 
 $L(\theta)$나 $l(\theta)$를 극대화하는 $\theta$를 찾을 때 깔끔한 analytical solution이 있으면 좋겠지만, 없는 경우에는 Newton-Raphson algorithm과 같은 numerical method가 필요합니다.
 
-우선 Normal 분포를 시작으로 analytical solution이 있는 경우를 살펴보도록 하겠습니다. 평균이 $\mu$, 분산이 $\sigma^2$인 Normal 분포의 PDF는 다음과 같이 주어집니다.
+우선 Normal 분포를 시작으로 analytical solution이 있는 경우를 살펴보도록 하겠습니다. Normal 분포에 대해 우리가 추정할 $\theta$는 
+분포의 평균인 $\mu$와 분산 $\sigma^2$이고요, PDF는 다음과 같습니다.
 
 \begin{equation}
     f(x_i | \mu, \sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} \exp{\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \}}
 \end{equation}
 
-위에서 정의된 대로 $N$개의 관측치에 대해 $l(\mu,\sigma^2)$는 다음과 같습니다.
+위에서 정의된 대로 $N$개의 관측치에 대해 $l(\mu,\sigma^2)$는 다음과 같이 쓸 수 있습니다.
 
+$$\begin{equation}
 \begin{split}
     l(\mu,\sigma^2)
     &= \sum_{i=1}^{N}{ \ln{( \frac{1}{\sigma\sqrt{2\pi}} \exp{\{ -\frac{(x_i-\mu)^2}{2\sigma^2} \}} )} } \\
     &= -N \ln{\sigma} - \frac{N}{2} \ln{2\pi} - \frac{1}{2\sigma^2} \sum_{i=1}^{N}{(x_i-\mu)^2}
 \end{split}
+\end{equation}$$
 
-이어서 $l(\mu,\sigma^2)$를 극대화하는 $\mu$를 찾기 위해 FOC를 풀면 아래와 같이 $\hat{\mu}$를 구할 수 있습니다.
+이어서 $l(\mu,\sigma^2)$를 극대화하는 $\hat{\mu}$를 찾기 위해 아래와 같이 FOC를 구할 수 있습니다.
 
 \begin{equation}
     \frac{\partial}{\partial\mu} l(\mu,\sigma^2) = \frac{1}{\sigma^2} \sum_{i=1}^{N}{(x_i-\mu)} = 0
