@@ -8,8 +8,10 @@ header:
 ---
 <img src="/assets/images/lands_181920.png" alt="surface-graph" width="700"/>
 
-In 2021, NFTs started to gain soaring popularity after the explosive growth of Bitcoin and the subsequent cryptocurrencies over the last couple of years. Cryptocurrencies and NFTs are similar in the sense that their transactions are recorded on a distributed ledger using cryptography, thereby remaining traceable and immutable. However, each NFT is unique and can only be held by one owner, whereas cryptocurrencies held by different people are indifferent.
+In 2021, NFTs started to gain soaring popularity after the explosive growth of Bitcoin and the subsequent cryptocurrencies over the last couple of years. Cryptocurrencies and NFTs are similar in the sense that their transactions are recorded on a distributed ledger using cryptography, thereby remaining traceable and immutable. However, each NFT is unique and thus has its own distinct value, whereas a unit of cryptocurrencies held by different people is indifferent in terms of value.
 
-> An NFT is "a unique digital certificate, registered in a blockchain, that is used to record ownership of an asset such as an artwork or a collectible."
+> An NFT is "a unique digital certificate, registered in a blockchain, that is used to record the ownership of an asset such as an artwork or a collectible." __from Collins Dictionary__
 
-Will people spend more time in Decentraland? Created in 2015, Decentraland has been one of the most popular decentralized virtual reality (VR) platforms, which consists of 90,601 parcels and is powered by the Ethereum blockchain.
+Such characteristics of NFTs are very well suited to virtual reality (VR) platforms, another emerging digital trend that we can hardly dismiss. 
+
+Since its birth in 2015, Decentraland has been one of the most popular VR platforms paired with NFTs, consisting of 90,601 parcels (named LANDs) and is powered by the Ethereum blockchain.
