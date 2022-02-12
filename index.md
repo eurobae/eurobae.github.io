@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 
-안녕하세요! Welcome to my blog :-)
+Welcome to my blog :-)
 
 I am a PhD student in Information Systems at KAIST College of Business. Previously I received a Master's from the same college and a Bachelor's in Industrial and Management Engineering at POSTECH. Spent more than two-thirds of my life in schools, I am still learning who I am and how to create ideas and values for us.
 
@@ -14,8 +14,8 @@ Below is a list of ongoing work.
 
 
 ### Working Papers
-* **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Incentives Thrive as Their Prices Rise? Evidence from a Ride-Hailing Platform"
-* Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Role of Stablecoins: Evidence from OpenSea"
+* **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Loyalty Programs Thrive as the Coin Price Rises?"
+* Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Roles of Stablecoins: Evidence from OpenSea"
 
 ### Conference & Workshop Presentations
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2021). "Cryptocurrency-Based Incentives and Digital Platforms," _Bright Internet Global Summit_ (BIGS), Virtual, December 2021
