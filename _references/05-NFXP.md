@@ -58,7 +58,7 @@ $$\begin{equation}
         = p(x_{t+1} | x_t,d_t,\theta) q(\epsilon_t | x_t,\theta)
 \end{equation}$$
 
-Conditional choice probability $P(d|x,\theta)$는 multinomial logit 공식을 통해 표현됩니다.
+Conditional choice probability $P(d \| x,\theta)$는 multinomial logit 공식을 통해 표현됩니다.
 
 $$\begin{equation}
     P(d | x,\theta) = \frac{ \exp{\{ u(x,d,\theta) + \beta EV_{\theta}(x,d) \}} }
