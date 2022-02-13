@@ -25,7 +25,7 @@ Rust는 Econometrica 1987년 논문을 통해 Harold Zurcher라는 한 버스 �
 \begin{equation}
     u(x,d,\theta) =
         \begin{cases}
-            -RC - c(0,\theta) & \text{if } d=1 \\
+            -RC - c(0,\theta) & \text{if } d=1 \\\
             -c(x,\theta)      & \text{if } d=0
         \end{cases}
 \end{equation}
