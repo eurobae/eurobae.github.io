@@ -42,7 +42,7 @@ $$\begin{equation}
         \end{cases}
 \end{equation}$$
 
-State variable들은 Markov process를 따르는데, 이때 transition density가 $\pi(x_{t+1},\epsilon_{t+1} \bar x_t,\epsilon_t,d_t,\theta)$로 주어진다고 가정해 봅시다.
+State variable들은 Markov process를 따르는데, 이때 transition density가 $\pi(x_{t+1},\epsilon_{t+1} \| x_t,\epsilon_t,d_t,\theta)$로 주어진다고 가정해 봅시다.
 
 문제를 쉽고 풀 수 있게 만들기 위해서 Rust는 아래와 같이 Conditional Independence (CI) Assumption이라는 또 하나의 중요한 가정을 제안합니다.
 
