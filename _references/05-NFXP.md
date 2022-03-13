@@ -1,12 +1,14 @@
 ---
 title: "Rust's Nested Fixed Point Algorithm"
 permalink: /references/nfxp/
-last_modified_at: 2022-02-18
+last_modified_at: 2022-03-13
 classes: wide
 toc: true
 use_math: true
 comments: true
 ---
+
+# Rust's Nested Fixed Point Algorithm (NFXP)
 
 본 포스트는 John Rust가 1987년 Econometrica에 게재한 [Optimal Replacement of GMC Bus Engines: An Empirical Model of Harold Zurcher](https://www.jstor.org/stable/1911259)에 기반하여 만들어졌습니다.
 
@@ -18,17 +20,19 @@ Rust는 Harold Zurcher라는 한 버스 정비 담당자의 버스 엔진 교체
 
 만약 Zurcher가 지금 당장 엔진을 교체한다면 즉각적으로 교체 비용이 발생할 것이고, 교체하지 않는다면 언제일지 모르는 미래에 버스가 고장나서 예상치 못한 비용을 지불해야 할 수 있습니다. 따라서 각 시점마다 엔진을 교체할 때와 교체하지 않을 때 발생 가능한 비용 중 최소 비용을 부담하기 위한 선택이 내려질 것이고, 이에 대한 optimal stopping rule은 stochastic dynamic programming 문제의 solution으로 표현 가능합니다.
 
+Stochastic dynamic programming 문제를 풀기 위한 Rust의 nested fixed point algorithm은 likelihood function $L(\theta)$를 극대화하는 $\theta$를 찾는 "outer" optimization algorithm과 주어진 $\theta$ 값에 대하여 fixed point $EV_{\theta}$를 계산하는 "inner" fixed point algorithm 등 두 개의 알고리즘이 중첩된 형태로 구성됩니다.
+
 <br>
 
 ## 2. Model
 
-가장 최근에 있었던 엔진 교체 이후로 시점 $t$까지 적립된 버스의 주행거리를 $x_t$라는 관찰 가능한 state variable로 생각해 봅시다. 그리고 시점 $t$마다 Zurcher의 엔진 교체 결정은 0 또는 1의 값을 가지는 $d_t$로 표기하겠습니다. $d_t$가 0이면 엔진을 유지하는 결정이고, 1이면 새로운 엔진으로 교체하는 결정입니다.
+시점 $t$까지 적립된 버스의 주행거리를 $x_t$라는 관찰 가능한 state variable로 생각해 봅시다. 그리고 시점 $t$마다 Zurcher의 엔진 교체 결정은 0 또는 1의 값을 가지는 $d_t$로 표기하겠습니다. $d_t$가 0이면 엔진을 유지하는 결정이고, 1이면 새로운 엔진으로 교체하는 결정입니다.
 
 각 시점 $t$마다 Zurcher가 예상하는 비용인 expected per period costs는 $x_t$에 대해 증가하고 미분 가능한 함수 $c(x_t,\theta)$라고 가정하겠습니다. $c(x_t,\theta)$에는 엔진 교체에 필요한 인력 비용과 같이 직접적으로 관찰할 수 있는 비용뿐만 아니라 직접 관찰할 수는 없지만 엔진을 교체하지 않았을 때 예기치 못한 고장으로 인해 발생 가능한 비용에 대한 Zurcher의 전망치도 함께 포함될 것입니다.
 
-한편, Zurcher는 의사결정 시 관찰했지만 우리 분석가들은 관찰할 수 없는 state variable들도 분명 있을 것입니다. Rust는 이러한 unobserved state variable들을 각 선택 $d_{t}$에 대하여 $\epsilon_t = \{ \epsilon_t{(0)}, \epsilon_t{(1)} \}$로 표기했습니다.
+한편, Zurcher는 의사결정 시 관찰할 수 있지만 우리 분석가들은 관찰할 수 없는 state variable들도 분명 있을 것입니다. Rust는 이러한 unobserved state variable들을 각 선택 $d_{t}$에 대하여 $\epsilon_t = \{ \epsilon_t{(0)}, \epsilon_t{(1)} \}$로 표기했습니다.
 
-종합적으로 시점 $t$에 state variables $x_t$와 $\epsilon_t$가 주어지고, Zurcher가 비용 함수 $c(x_t,\theta)$를 가지며, 엔진을 교체할지 유지할지에 대한 선택 $d_t$를 결정할 때, utility function $u(x_t,d_t,\theta)$를 정의할 수 있을 것입니다.
+종합적으로 시점 $t$에 state variables $x_t$와 $\epsilon_t$가 주어지고, Zurcher가 비용 함수 $c(x_t,\theta)$를 가지며, 엔진을 교체할지 유지할지에 대한 선택 $d_t$를 결정할 때, single period utility function $u(x_t,d_t,\theta) + \epsilon_t(d_t)$를 예를 들어 아래와 같이 정의할 수 있을 것입니다.
 
 $$\begin{equation}
     u(x_t,d_t,\theta) + \epsilon_t(d_t) =
@@ -38,7 +42,9 @@ $$\begin{equation}
         \end{cases}
 \end{equation}$$
 
-Conditional Independence (CI) Assumption
+State variable들은 Markov process를 따르는데, 이때 transition density가 $\pi(x_{t+1},\epsilon_{t+1} | x_t,\epsilon_t,d_t,\theta)$로 주어진다고 가정해 봅시다.
+
+문제를 쉽고 풀 수 있게 만들기 위해서 Rust는 아래와 같이 Conditional Independence (CI) Assumption이라는 또 하나의 중요한 가정을 제안합니다.
 
 $$\begin{equation}
     \pi(x_{t+1},\epsilon_{t+1} | x_t,\epsilon_t,d_t,\theta)
@@ -53,7 +59,7 @@ $$\begin{equation}
         \end{cases}
 \end{equation}$$
 
-Stationary infinite horizon case에서 optimal value function $V_{\theta}$는 아래 Bellman equation의 unique solution입니다.
+Stationary infinite horizon case에서 optimal value function $V_{\theta}$는 아래 Bellman equation의 unique solution입니다. 현 시점의 utility value를 제외하고 미래에 대한 기대에 해당하는 마지막 항을 expected value function $EV_{\theta}$와 discount factor $\beta$의 곱으로 좀더 간단히 표기하겠습니다.
 
 $$\begin{equation}
 \begin{split}
@@ -64,7 +70,13 @@ $$\begin{equation}
 \end{split}
 \end{equation}$$
 
-CI 가정 덕분에 conditional choice probability $P(d \vert x,\theta)$는 우리가 잘 아는 multinomial logit 공식을 통해 표현됩니다.
+CI 가정 덕분에 likelihood function $L(\theta)$를 아래와 같이 정의할 수 있습니다.
+
+$$\begin{equation}
+    L(\theta) = \prod_{t=2}^{T} {P(d_t | x_t,\theta) p(x_t | x_{t-1},d_{t-1},\theta)}
+\end{equation}$$
+
+conditional choice probability $P(d \vert x,\theta)$는 우리가 잘 아는 multinomial logit 공식을 통해 표현됩니다.
 
 $$\begin{equation}
     P(d | x,\theta) = \frac{ \exp{\{ u(x,d,\theta) + \beta EV_{\theta}(x,d) \}} }
@@ -82,7 +94,28 @@ $$\begin{equation}
 
 <br>
 
-## 3. Data
+## 3. NFXP Algorithm
+
+### 3.1. "Inner" Fixed Point Polyalgorithm
+
+### 3.2. "Outer" BHHH Optimization Algorithm
+
+BHHH 알고리즘에서 파라미터 업데이트는 다음과 같이 진행됩니다.
+
+$$\begin{equation}
+    \theta_{k+1} = \theta_{k} + \lambda D(\theta_{k})
+\end{equation}$$
+
+만약 $\lambda=1$이고 $D(\theta)$가 아래와 같이 주어질 때 BHHH는 Newton's method와 동일해집니다.
+
+$$\begin{equation}
+    D(\theta) = -[\partial^2{L(\theta)} / \partial{\theta}\partial{\theta'}]^{-1}
+                \partial{L(\theta)} / \partial{\theta}
+\end{equation}$$
+
+<br>
+
+## 4. Data
 
 Ref: https://github.com/OpenSourceEconomics/rust-data
 
