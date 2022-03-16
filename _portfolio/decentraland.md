@@ -3,6 +3,7 @@ title: "Decentraland Analytics"
 last_modified_at: 2022-03-16
 classes: wide
 excerpt: "LAND price dynamics"
+use_math: true
 header:
   teaser: "/assets/portfolio/decentraland/sales_parcels.png"
 ---
@@ -14,8 +15,7 @@ The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian
 
 Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of 92,598 parcels. Between 2018 and 2020, 244,695 transactions are retrieved, 6,107 transactions (i.e., 6.6%) of which were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
 
-For the analysis, I use the log of selling prices in USD (i.e., $$\log{(Selling \text{ } price)}$$) as a focal dependent variable. The figure below presents the decreasing trend of the monthly average of $$\log{(Selling \text{ } price)}$$.
-
+For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the decreasing trend of the monthly average of $\log{(Selling \text{ } price)}$.
 <img src="/assets/portfolio/decentraland/sales_yearmonth.png" width="700"/>
 
 
