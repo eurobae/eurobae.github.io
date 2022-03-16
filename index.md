@@ -15,7 +15,7 @@ Below is a list of ongoing work.
 
 ### Working Papers
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Loyalty Programs Thrive as the Coin Price Rises?"
-* **Euro Bae**, Daegon Cho. "Understanding Virtual Real Estate Price Dynamics in the Metaverse: Evidence from Decentraland"
+* **Euro Bae**, Daegon Cho. "Virtual Real Estate Price Dynamics in the Metaverse: Evidence from Decentraland"
 * Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Roles of Stablecoins: Evidence from OpenSea"
 
 ### Conference & Workshop Presentations
