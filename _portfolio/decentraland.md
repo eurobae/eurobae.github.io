@@ -15,10 +15,12 @@ The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian
 
 Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of 92,598 parcels. Between 2018 and 2020, 244,695 transactions are retrieved, 6,107 transactions (i.e., 6.6%) of which were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
 
-For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the decreasing trend of the monthly average of $\log{(Selling \text{ } price)}$.
+For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the trend of the monthly average of $\log{(Selling \text{ } price)}$.
 <img src="/assets/portfolio/decentraland/sales_yearmonth.png" width="700"/>
+While the monthly trend is decreasing, the yearly average looks comparatively stable, shown as below.
+<img src="/assets/portfolio/decentraland/sales_year.png" width="700"/>
 
-
+As the first preliminary statistical analysis, I employed the hedonic regression model. Parcel-specific characteristics here considered include whether parcel $i$ is a part of road ($road$), the shortest Euclidean distances to road ($distRoad$), to plaza ($distPlaza$), and to origin ($distOrigin$), and whether the sales was processed with MANA ($payMANA$) or Ether ($payETH$). The table below shows the estimation results of the hedonic regression model.
 
                               PanelOLS Estimation Summary                           
     ================================================================================
@@ -77,3 +79,6 @@ For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \
     YM_2020-11    -0.2674     0.1254    -2.1315     0.0331     -0.5133     -0.0215
     YM_2020-12    -0.5890     0.0451    -13.046     0.0000     -0.6775     -0.5005
     ==============================================================================
+
+Based on the constructed hedonic regression model, I further generated the predicted $\log{(Selling \text{ } price)}$ values of the entire parcels. The figure below visualizes how the predicted values are distant from the actual values.
+<img src="/assets/portfolio/decentraland/eval_hedonic.png" width="700"/>
