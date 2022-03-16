@@ -1,17 +1,15 @@
 ---
 title: "Decentraland Analytics"
-last_modified_at: 2021-12-25
+last_modified_at: 2022-03-16
 classes: wide
-excerpt: "How centralized is Decentraland?"
+excerpt: "LAND price dynamics"
 header:
   teaser: "/assets/images/lands_181920-th.png"
 ---
 <img src="/assets/images/lands_181920.png" alt="surface-graph" width="700"/>
 
-In 2021, NFTs started to gain soaring popularity after the explosive growth of Bitcoin and the subsequent cryptocurrencies over the last couple of years. Cryptocurrencies and NFTs are similar in the sense that their transactions are recorded on a distributed ledger using cryptography, thereby remaining traceable and immutable. However, each NFT is unique and thus has its own distinct value, whereas a unit of cryptocurrencies held by different people is indifferent in terms of value.
+Since its birth in 2015, Decentraland has been one of the most popular virtual reality (VR) platforms paired with NFTs. Within the platform, users can create, experience, and monetize their VR content and applications. Specifically, the finite, traversable, 3D virtual space is called _LAND_, an NFT asset maintained on the Ethereum blockchain, transactions of which remain traceable and immutable.
 
-> An NFT is "a unique digital certificate, registered in a blockchain, that is used to record the ownership of an asset such as an artwork or a collectible." (from Collins Dictionary)
+The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian coordinates (x,y). On each parcel, an owner can build a _scene_ by using design tools like the [Builder](https://builder.decentraland.org/){: target="_blank"} or the Decentraland SDK, creating and offering a parcel-specific virtual experience to other users. Initially, the values of both x and y spanned from -150 to 0 to 150, constituting 90,601 (i.e., 301x301) different parcels. Then the upper-right corner of LAND has been expanded by the AETHERIAN project, and, at the time of writing, there exist 92,598 parcels in total.
 
-Such characteristics of NFTs are very well suited to virtual reality (VR) platforms, another emerging digital trend that we can hardly dismiss. From virtual real estate to wearables, a variety of digital assets on VR platforms are created and waiting to be traded.
-
-Since its birth in 2015, Decentraland has been one of the most popular VR platforms paired with NFTs, consisting of 90,601 parcels (named LANDs) and is powered by the Ethereum blockchain.
+Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of parcels. Between 2018 and 2020, 244,695 transactions of 92,598 parcels are retrieved. In particular, 6,107 transactions (i.e., 6.6%) were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
