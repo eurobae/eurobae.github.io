@@ -8,7 +8,6 @@ header:
   teaser: "/assets/portfolio/decentraland/sales_parcels.png"
 ---
 <img src="/assets/portfolio/decentraland/sales_parcels.png" width="600"/>
-
 Since its birth in 2015, Decentraland has been one of the most popular virtual reality (VR) platforms paired with NFTs. Within the platform, users can create, experience, and monetize their VR content and applications. Specifically, the finite, traversable, 3D virtual space is called _LAND_, an NFT asset maintained on the Ethereum blockchain, transactions of which remain traceable and immutable.
 
 The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian coordinates (x,y). On each parcel, an owner can build a _scene_ by using design tools like the [Builder](https://builder.decentraland.org/){: target="_blank"} or the Decentraland SDK, creating and offering a parcel-specific virtual experience to other users. Initially, the values of both x and y spanned from -150 to 0 to 150, constituting 90,601 (i.e., 301x301) different parcels. Then the upper-right corner of LAND has been expanded by the AETHERIAN project, and, at the time of writing, there exist 92,598 parcels in total.
@@ -18,7 +17,7 @@ Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target
 For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the trend of the monthly average of $\log{(Selling \text{ } price)}$.
 <img src="/assets/portfolio/decentraland/sales_yearmonth.png" width="600"/>
 
-While the monthly trend is decreasing, the yearly average looks comparatively stable, shown as below.
+While the monthly trend was decreasing, the yearly average looks comparatively stable, shown as below.
 <img src="/assets/portfolio/decentraland/sales_year.png" width="600"/>
 
 As the first preliminary statistical analysis, I employed the hedonic regression model. Parcel-specific characteristics here considered include whether parcel $i$ is a part of road ($road$), the shortest Euclidean distances to road ($distRoad$), to plaza ($distPlaza$), and to origin ($distOrigin$), and whether the sales was processed with MANA ($payMANA$) or Ether ($payETH$). The table below shows the estimation results of the hedonic regression model.
