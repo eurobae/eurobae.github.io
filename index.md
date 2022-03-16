@@ -6,16 +6,16 @@ classes: wide
 
 Welcome to my blog :-)
 
-I am a PhD student in Information Systems at KAIST College of Business. Previously I received a Master's from the same college and a Bachelor's in Industrial and Management Engineering at POSTECH. Spent more than two-thirds of my life in schools, I am still learning who I am and how to create ideas and values for us.
+I am a PhD student in Information Systems at KAIST College of Business. Previously I received a Bachelor's in Industrial and Management Engineering at POSTECH. Spent more than two-thirds of my life in schools, I am still learning who I am and how to create ideas and values for us.
 
-My research explores how the growing cryptocurrency market and blockchain technology can innovate platform businesses by blurring the distinction between investors and users. Platforms today can easily list their own cryptocurrencies on multiple exchanges to be freely trading, and blockchains make all the transactions traceable and immutable. Accordingly, the user demand has grown for earning cryptocurrencies by using products and services based on more transparent information systems. Therefore, platforms should carefully design the systems to create a virtuous cycle of more positive user participation, more sustainable platform growth, and higher cryptocurrency prices.
+My research explores how the cryptocurrency market and blockchain technology can innovate platform businesses by blurring the distinction between investors and users. Platforms today can easily list their cryptocurrencies on exchanges to be freely trading, and blockchains make all the transactions traceable and immutable. Accordingly, the user demand has grown for earning cryptocurrencies by using products and services based on more transparent information systems. Therefore, platforms should carefully design the systems to create a virtuous cycle of more positive user participation, more sustainable platform growth, and higher cryptocurrency prices.
 
 Below is a list of ongoing work.
 
 
 ### Working Papers
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Loyalty Programs Thrive as the Coin Price Rises?"
-* **Euro Bae**, Daegon Cho. "Virtual Real Estate Price Dynamics in the Metaverse: Evidence from Decentraland"
+* **Euro Bae**, Daegon Cho. "Virtual Real Estate Price Dynamics in the Metaverse: A Case Study of Decentraland"
 * Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Roles of Stablecoins: Evidence from OpenSea"
 
 ### Conference & Workshop Presentations
