@@ -12,9 +12,9 @@ Since its birth in 2015, Decentraland has been one of the most popular virtual r
 
 The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian coordinates (x,y). On each parcel, an owner can build a _scene_ by using design tools like the [Builder](https://builder.decentraland.org/){: target="_blank"} or the Decentraland SDK, creating and offering a parcel-specific virtual experience to other users. Initially, the values of both x and y spanned from -150 to 0 to 150, constituting 90,601 (i.e., 301x301) different parcels. Then the upper-right corner of LAND has been expanded by the AETHERIAN project, and, at the time of writing, there exist 92,598 parcels in total.
 
-Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of parcels. Between 2018 and 2020, 244,695 transactions of 92,598 parcels are retrieved. In particular, 6,107 transactions (i.e., 6.6%) were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
+Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of 92,598 parcels. Between 2018 and 2020, 244,695 transactions are retrieved, 6,107 transactions (i.e., 6.6%) of which were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
 
-For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the decreasing trend of the monthly average of $\log{(Selling \text{ } price)}$.
+For the analysis, I use the log of selling prices in USD (i.e., $$\log{(Selling \text{ } price)}$$) as a focal dependent variable. The figure below presents the decreasing trend of the monthly average of $$\log{(Selling \text{ } price)}$$.
 
 <img src="/assets/portfolio/decentraland/sales_yearmonth.png" width="700"/>
 
