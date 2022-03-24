@@ -7,80 +7,87 @@ use_math: true
 header:
   teaser: "/assets/portfolio/decentraland/sales_parcels.png"
 ---
-<img src="/assets/portfolio/decentraland/sales_parcels.png" width="600"/>
 
 Since its birth in 2015, Decentraland has been one of the most popular virtual reality (VR) platforms paired with NFTs. Within the platform, users can create, experience, and monetize their VR content and applications. Specifically, the finite, traversable, 3D virtual space is called _LAND_, an NFT asset maintained on the Ethereum blockchain, transactions of which remain traceable and immutable.
 
 The 16m x 16m smallest unit of LAND is named a _parcel_, identified by cartesian coordinates (x,y). On each parcel, an owner can build a _scene_ by using design tools like the [Builder](https://builder.decentraland.org/){: target="_blank"} or the Decentraland SDK, creating and offering a parcel-specific virtual experience to other users. Initially, the values of both x and y spanned from -150 to 0 to 150, constituting 90,601 (i.e., 301x301) different parcels. Then the upper-right corner of LAND has been expanded by the AETHERIAN project, and, at the time of writing, there exist 92,598 parcels in total.
 
-Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, I retrieved all the historical events (e.g., auctions, sales, transfers) of 92,598 parcels. Between 2018 and 2020, 244,695 transactions are retrieved, 6,107 transactions (i.e., 6.6%) of which were the actual sales. I first focus on those sales to study the determinants of virtual real estate prices.
+Using the [OpenSea API](https://docs.opensea.io/reference/api-overview){: target="_blank"}, all the historical events (e.g., auctions, sales, transfers) of 92,598 parcels are retrieved. Between 2018 and 2020, there were 244,695 transactions, 6,107 transactions (i.e., 6.6%) of which were the actual sales. Let's first focus on those sales to study the determinants of virtual real estate prices.
 
-For the analysis, I use the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$) as a focal dependent variable. The figure below presents the trend of the monthly average of $\log{(Selling \text{ } price)}$.
+The focal dependent variable is the log of selling prices in USD (i.e., $\log{(Selling \text{ } price)}$). The figure below presents the trend of the monthly average of $\log{(Selling \text{ } price)}$.
 <img src="/assets/portfolio/decentraland/sales_yearmonth.png" width="600"/>
 
 While the monthly trend was decreasing, the yearly average looks comparatively stable, shown as below.
 <img src="/assets/portfolio/decentraland/sales_year.png" width="600"/>
 
-As the first preliminary statistical analysis, I employed the hedonic regression model. Parcel-specific characteristics here considered include whether parcel $i$ is a part of road ($road$), the shortest Euclidean distances to road ($distRoad$), to plaza ($distPlaza$), and to origin ($distOrigin$), and whether the sales was processed with MANA ($payMANA$) or Ether ($payETH$). The table below shows the estimation results of the hedonic regression model.
+Of course, selling prices vary across different parcels, and the image below illustrates such a diversity.
+<img src="/assets/portfolio/decentraland/sales_parcels.png" width="500"/>
+
+The simple hedonic regression model is employed as the first statistical analysis. Parcel-specific characteristics considered include whether parcel $i$ is a part of road ($road$), the shortest Euclidean distances to origin ($distOrigin$), to road ($distRoad$), to plaza ($distPlaza$), and to district ($distDistrict$), and whether the sales was processed with MANA ($payMANA$) or Ether ($payETH$). The table below shows the estimation results of the hedonic regression model.
 
                               PanelOLS Estimation Summary                           
     ================================================================================
-    Dep. Variable:              LpriceUSD   R-squared:                        0.2280
-    Estimator:                   PanelOLS   R-squared (Between):              0.2850
-    No. Observations:                6107   R-squared (Within):               0.1666
-    Date:                Wed, Mar 16 2022   R-squared (Overall):              0.2280
-    Time:                        18:52:22   Log-likelihood                   -6485.1
+    Dep. Variable:              LpriceUSD   R-squared:                        0.2706
+    Estimator:                   PanelOLS   R-squared (Between):              0.3614
+    No. Observations:                6107   R-squared (Within):               0.1667
+    Date:                Thu, Mar 24 2022   R-squared (Overall):              0.2706
+    Time:                        14:25:02   Log-likelihood                   -6312.0
     Cov. Estimator:             Clustered                                           
-                                            F-statistic:                      56.062
+                                            F-statistic:                      60.841
     Entities:                        3284   P-value                           0.0000
-    Avg Obs:                       1.8596   Distribution:                 F(32,6074)
+    Avg Obs:                       1.8596   Distribution:                 F(37,6069)
     Min Obs:                       1.0000                                           
-    Max Obs:                       23.000   F-statistic (robust):             43.163
+    Max Obs:                       23.000   F-statistic (robust):             48.063
                                             P-value                           0.0000
-    Time periods:                      27   Distribution:                 F(32,6074)
+    Time periods:                      27   Distribution:                 F(37,6069)
     Avg Obs:                       226.19                                           
     Min Obs:                       91.000                                           
     Max Obs:                       602.00                                           
                                                                                     
-                                 Parameter Estimates                              
-    ==============================================================================
-                Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
-    ------------------------------------------------------------------------------
-    const          6.1293     1.2678     4.8345     0.0000      3.6439      8.6148
-    road          -1.0688     0.0887    -12.047     0.0000     -1.2427     -0.8949
-    distRoad      -1.8280     0.1964    -9.3066     0.0000     -2.2130     -1.4429
-    distPlaza      0.5261     0.0973     5.4060     0.0000      0.3354      0.7169
-    distOrigin    -1.0467     0.0930    -11.252     0.0000     -1.2291     -0.8643
-    payMANA        5.2092     1.2680     4.1082     0.0000      2.7235      7.6950
-    payETH         4.1433     1.2743     3.2514     0.0012      1.6452      6.6415
-    YM_2018-11    -0.2370     0.0409    -5.7994     0.0000     -0.3171     -0.1569
-    YM_2018-12    -0.1219     0.0440    -2.7702     0.0056     -0.2081     -0.0356
-    YM_2019-01    -0.1471     0.0451    -3.2627     0.0011     -0.2355     -0.0587
-    YM_2019-02    -0.1812     0.0958    -1.8903     0.0588     -0.3691      0.0067
-    YM_2019-03     0.0926     0.0415     2.2332     0.0256      0.0113      0.1739
-    YM_2019-04    -0.1149     0.0475    -2.4175     0.0157     -0.2080     -0.0217
-    YM_2019-05    -0.2146     0.0589    -3.6458     0.0003     -0.3299     -0.0992
-    YM_2019-06    -0.3097     0.0525    -5.8935     0.0000     -0.4127     -0.2067
-    YM_2019-07    -0.1098     0.0513    -2.1397     0.0324     -0.2104     -0.0092
-    YM_2019-08    -0.0469     0.0730    -0.6428     0.5204     -0.1900      0.0962
-    YM_2019-09    -0.1390     0.0529    -2.6291     0.0086     -0.2426     -0.0354
-    YM_2019-10     0.0316     0.0502     0.6294     0.5291     -0.0669      0.1301
-    YM_2019-11    -0.0546     0.0693    -0.7881     0.4306     -0.1903      0.0812
-    YM_2019-12    -0.1225     0.0542    -2.2599     0.0239     -0.2287     -0.0162
-    YM_2020-01    -0.0245     0.0908    -0.2699     0.7872     -0.2025      0.1535
-    YM_2020-02     0.1003     0.0545     1.8401     0.0658     -0.0065      0.2071
-    YM_2020-03     0.0188     0.0494     0.3816     0.7028     -0.0779      0.1156
-    YM_2020-04    -0.0741     0.0708    -1.0469     0.2952     -0.2129      0.0647
-    YM_2020-05    -0.1102     0.0514    -2.1428     0.0322     -0.2110     -0.0094
-    YM_2020-06    -0.0676     0.0657    -1.0288     0.3036     -0.1964      0.0612
-    YM_2020-07     0.0317     0.0560     0.5667     0.5710     -0.0781      0.1416
-    YM_2020-08    -0.3091     0.0975    -3.1698     0.0015     -0.5003     -0.1179
-    YM_2020-09    -0.4392     0.0512    -8.5798     0.0000     -0.5395     -0.3388
-    YM_2020-10    -0.3550     0.1094    -3.2442     0.0012     -0.5695     -0.1405
-    YM_2020-11    -0.2674     0.1254    -2.1315     0.0331     -0.5133     -0.0215
-    YM_2020-12    -0.5890     0.0451    -13.046     0.0000     -0.6775     -0.5005
-    ==============================================================================
+                                   Parameter Estimates                                
+    ==================================================================================
+                    Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+    ----------------------------------------------------------------------------------
+    const              6.9541     1.2318     5.6453     0.0000      4.5393      9.3689
+    road              -1.4484     0.0864    -16.756     0.0000     -1.6179     -1.2790
+    distOrigin        -4.7120     0.5047    -9.3361     0.0000     -5.7014     -3.7226
+    distRoad          -5.4304     0.4085    -13.293     0.0000     -6.2312     -4.6295
+    distPlaza          0.3961     0.2658     1.4903     0.1362     -0.1249      0.9171
+    distDistrict      -0.7604     0.1695    -4.4870     0.0000     -1.0926     -0.4282
+    distOriginSQ       4.9603     0.6684     7.4207     0.0000      3.6499      6.2707
+    distRoadSQ         10.209     1.0536     9.6894     0.0000      8.1437      12.275
+    distPlazaSQ       -1.7875     0.5089    -3.5124     0.0004     -2.7852     -0.7899
+    distDistrictSQ     0.8212     0.2178     3.7698     0.0002      0.3941      1.2482
+    payMANA            5.2532     1.2315     4.2657     0.0000      2.8391      7.6674
+    payETH             4.1757     1.2392     3.3696     0.0008      1.7463      6.6051
+    YM_2018-11        -0.2514     0.0378    -6.6553     0.0000     -0.3255     -0.1774
+    YM_2018-12        -0.1261     0.0392    -3.2149     0.0013     -0.2030     -0.0492
+    YM_2019-01        -0.1018     0.0409    -2.4861     0.0129     -0.1820     -0.0215
+    YM_2019-02        -0.1343     0.0926    -1.4502     0.1470     -0.3158      0.0472
+    YM_2019-03         0.1166     0.0369     3.1614     0.0016      0.0443      0.1889
+    YM_2019-04        -0.0939     0.0439    -2.1373     0.0326     -0.1801     -0.0078
+    YM_2019-05        -0.2070     0.0550    -3.7615     0.0002     -0.3149     -0.0991
+    YM_2019-06        -0.3419     0.0489    -6.9856     0.0000     -0.4379     -0.2460
+    YM_2019-07        -0.1064     0.0446    -2.3859     0.0171     -0.1938     -0.0190
+    YM_2019-08        -0.0218     0.0654    -0.3338     0.7385     -0.1501      0.1064
+    YM_2019-09        -0.1053     0.0468    -2.2507     0.0244     -0.1969     -0.0136
+    YM_2019-10         0.0411     0.0465     0.8841     0.3767     -0.0501      0.1324
+    YM_2019-11        -0.0696     0.0679    -1.0247     0.3056     -0.2027      0.0635
+    YM_2019-12        -0.0902     0.0521    -1.7319     0.0833     -0.1923      0.0119
+    YM_2020-01        -0.0220     0.0833    -0.2636     0.7921     -0.1853      0.1414
+    YM_2020-02         0.1263     0.0511     2.4691     0.0136      0.0260      0.2265
+    YM_2020-03         0.0402     0.0460     0.8742     0.3820     -0.0500      0.1304
+    YM_2020-04        -0.0756     0.0681    -1.1099     0.2671     -0.2090      0.0579
+    YM_2020-05        -0.1068     0.0486    -2.1972     0.0280     -0.2021     -0.0115
+    YM_2020-06        -0.0764     0.0679    -1.1261     0.2602     -0.2095      0.0566
+    YM_2020-07         0.0146     0.0509     0.2874     0.7738     -0.0852      0.1144
+    YM_2020-08        -0.3279     0.0992    -3.3055     0.0010     -0.5224     -0.1335
+    YM_2020-09        -0.4236     0.0476    -8.8963     0.0000     -0.5169     -0.3303
+    YM_2020-10        -0.3357     0.1087    -3.0892     0.0020     -0.5488     -0.1227
+    YM_2020-11        -0.2559     0.1256    -2.0369     0.0417     -0.5022     -0.0096
+    YM_2020-12        -0.5663     0.0413    -13.703     0.0000     -0.6473     -0.4852
+    ==================================================================================
 
 
-Based on the constructed hedonic regression model, I further generated the predicted $\log{(Selling \text{ } price)}$ values of the entire parcels. The figure below visualizes how the predicted values are distant from the actual values.
+Based on the constructed hedonic regression model, the predicted $\log{(Selling \text{ } price)}$ values of the entire parcels are further generated. The figure below visualizes how the predicted values are distant from the actual values.
 <img src="/assets/portfolio/decentraland/eval_hedonic.png" width="400"/>
