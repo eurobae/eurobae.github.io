@@ -13,9 +13,12 @@ Welcome to my blog :)
 * **POSTECH**
   - B.S. in Industrial & Management Engineering (2014-2018)
 
+### Research Interest
+* Fintech, Payment, Cryptocurrency
+
 ### Working Papers
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise?"
-* **Euro Bae**, Daegon Cho. "Virtual Real Estate Price Dynamics in the Metaverse: A Case Study of Decentraland"
+* **Euro Bae**, Daegon Cho. "On the Effects of the Availability of Crpytocurrency Payments: The Case of Decentraland"
 * Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Roles of Stablecoins: Evidence from OpenSea"
 
 ### Conference & Workshop Presentations
