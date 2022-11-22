@@ -4,6 +4,7 @@ author_profile: true
 classes: wide
 ---
 
+Welcome to my blog :)
 
 ### Education
 * **KAIST College of Business**
