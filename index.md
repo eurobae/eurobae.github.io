@@ -5,10 +5,10 @@ classes: wide
 ---
 
 ### Education
-* KAIST College of Business, Seoul, Korea
+* **KAIST College of Business**
   - Ph.D. in Management Engineering (2020-Present)
   - M.S. in Management Engineering (2018-2020)
-* POSTECH, Pohang, Korea
+* **POSTECH**
   - B.S. in Industrial & Management Engineering (2014-2018)
 
 ### Working Papers
@@ -24,7 +24,7 @@ classes: wide
 * **Euro Bae**, Daegon Cho. (2019). "Non-Green Investors Predict Green Stocks Better: Empirical Evidence from StockTwits," _International Conference on Electronic Commerce_ (ICEC), Busan, Korea, July 2019
 
 ### Awards 
-* Best Overall, Meta APAC Robyn Hackathon, 2022
+* [Best Overall](https://devpost.com/software/toward-better-validation-and-interpretation-of-robyn){: target="_blank"}, Meta APAC Robyn Hackathon, 2022
 * Best Paper Award, WITS Feeder Workshop, 2022
 
 ### Other Publications
