@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 
-Welcome to my blog :)
+&nbsp;
 
 ### Education
 * **KAIST College of Business**
@@ -18,8 +18,7 @@ Welcome to my blog :)
 
 ### Working Papers
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. "Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise?"
-* **Euro Bae**, Daegon Cho. "On the Effects of the Availability of Crpytocurrency Payments: The Case of Decentraland"
-* Jaehyeong Park, **Euro Bae**, Daegon Cho. "Cryptocurrency Fluctuations, Prices of Non-Fungible Tokens, and the Roles of Stablecoins: Evidence from OpenSea"
+* **Euro Bae**, Daegon Cho. "On the Effects of the Availability of Cryptocurrency Payments: The Case of Decentraland"
 
 ### Conference & Workshop Presentations
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2022). "Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise?," _Workshop on Information Technologies and Systems (WITS) Feeder Workshop_, Seoul, Korea, November 2022
