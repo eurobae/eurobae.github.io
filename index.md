@@ -3,7 +3,6 @@ layout: home
 author_profile: true
 classes: wide
 ---
-
 &nbsp;
 ### Education
 * **KAIST College of Business**
