@@ -3,6 +3,7 @@ layout: home
 author_profile: true
 classes: wide
 ---
+&nasp;
 # Education
 * **KAIST College of Business**
   - Ph.D. in Management Engineering (2020-Present)
