@@ -11,7 +11,7 @@ classes: wide
 * **POSTECH**
   - B.S. in Industrial & Management Engineering (2014-2018)
 
-# Research Interest
+# Research Interests
 * Platform Strategy, User Analysis, Economics of IT
 
 # Working Papers
