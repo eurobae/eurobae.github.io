@@ -16,7 +16,7 @@ classes: wide
 
 # Working Papers
 * **"Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform"** with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho
-* **"Volatile Exchange Rates and Multiple Reference Points: The Case of Two Metaverse Platforms"** with Daegon Cho
+* **"Volatile Exchange Rates and Multiple Reference Points: The Cases of Two Metaverse Platforms"** with Daegon Cho
 * **"On the Effects of Quality Improvement in Fulfillment by Platform"** with Yeongwoo Kim, Jin Soo Han, and Daegon Cho
 
 # Conference & Workshop Presentations
