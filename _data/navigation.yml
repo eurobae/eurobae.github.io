@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "References"
-    url: /references/
+#   - title: "Portfolio"
+#     url: /portfolio/
+#   - title: "References"
+#     url: /references/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
