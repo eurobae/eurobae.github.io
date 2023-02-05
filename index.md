@@ -11,11 +11,11 @@ classes: wide
   - B.S. in Industrial & Management Engineering (2014-2018)
 
 # Research Interests
-* Platform Strategy, User Analysis, Economics of IT
+* Economics of IT, Platform Strategy, Cryptocurrency
 
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
-* **Volatile Exchange Rates and Multiple Reference Points: The Cases of Two Metaverse Platforms** (with Daegon Cho)
+* **Volatile Exchange Rates and Multiple Reference Points: A Cases Study of Decentraland** (with Daegon Cho)
 * **On the Effects of Quality Improvement in Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, and Daegon Cho)
 
 # Conference & Workshop Presentations
