@@ -15,6 +15,7 @@ classes: wide
 
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
+  - Presented at ICIS 2019, CIST 2020, BIGS 2021, and WITS Feeder Workshop 2022
 * **Volatile Exchange Rates and Multiple Reference Points: A Case Study of Decentraland** (with Daegon Cho)
 * **Fulfillment by Platform and Seller Competition** (with Yeongwoo Kim, Jin Soo Han, and Daegon Cho)
 
