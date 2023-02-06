@@ -16,7 +16,7 @@ classes: wide
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
 * **Volatile Exchange Rates and Multiple Reference Points: A Case Study of Decentraland** (with Daegon Cho)
-* **On the Effects of Quality Improvement in Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, and Daegon Cho)
+* **Fulfillment by Platform and Seller Competition** (with Yeongwoo Kim, Jin Soo Han, and Daegon Cho)
 
 # Conference & Workshop Presentations
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2022). "Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise?," _Workshop on Information Technologies and Systems (WITS) Feeder Workshop_, Seoul, Korea, November 2022
