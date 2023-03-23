@@ -11,7 +11,7 @@ classes: wide
   - B.S. in Industrial & Management Engineering (2014-2018)
 
 # Research Interests
-* Economics of IT, Platform Governance, Cryptoeconomics
+* Economics of IT, Platform economics, Cryptoeconomics
 
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
