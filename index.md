@@ -14,10 +14,10 @@ classes: wide
 * Economics of IT, Platform economics, Cryptoeconomics
 
 # Working Papers
-* **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
+* **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  Daegon Cho)
   - Presented at ICIS 2019, CIST 2020, BIGS 2021, and WITS Feeder Workshop 2022
 * **Volatile Exchange Rates and Multiple Reference Points: A Case Study of Decentraland** (with Daegon Cho)
-* **When the Tortoise Beats the Hare: An Empirical Investigation of the Distributional Effects of Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, and Daegon Cho)
+* **When the Tortoise Beats the Hare: Distributional Effects of Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, Daegon Cho, Soo-Haeng Cho)
 
 # Conference & Workshop Presentations
 * **Euro Bae**, Hyeokkoo Eric Kwon, Jaywon Lee, Daegon Cho. (2022). "Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise?," _Workshop on Information Technologies and Systems (WITS) Feeder Workshop_, Seoul, Korea, November 2022
