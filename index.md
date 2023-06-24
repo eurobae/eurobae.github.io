@@ -15,10 +15,10 @@ classes: wide
 
 # Working Papers
 * **When the Tortoise Beats the Hare: An Empirical Investigation of the Distributional Effects of Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, Daegon Cho, Soo-Haeng Cho)
-  - Presented at KrAIS Summer Workshop 2023, WITS Feeder Workshop 2023
+  - Presented at WITS Feeder Workshop 2023, KrAIS Summer Workshop 2023
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  Daegon Cho)
   - Presented at ICIS 2019, CIST 2020, BIGS 2021, WITS Feeder Workshop 2022
-* **Volatile Exchange Rates and Multiple Reference Points: A Case Study of a Blockchain-Based Metaverse Platform** (with Daegon Cho)
+* **Volatile Exchange Rates and Multiple Reference Points: A Case Study of a Blockchain-Based Metaverse Platform**
 
 # Other Publications
 * Chihong Jeon, **Euro Bae**, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/download.php?bo_table=B34_1&wr_id=9&no=1){: target="_blank"} (_in Korean_)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
