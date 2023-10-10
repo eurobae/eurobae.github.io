@@ -14,7 +14,7 @@ classes: wide
 * Platform Economics, User Engagement, Econometric Analysis
 
 # Working Papers
-* **The Distributional Effects of Fast Delivery Under Fulfillment by Platform** (with Yeongwoo Kim, Jin Soo Han, Daegon Cho, Soo-Haeng Cho)
+* **Two Sides of Same-Day Delivery: Evaluating the Distributional Effects of Platform Fulfillment on Third-Party Sales** (with Yeongwoo Kim, Jin Soo Han, Daegon Cho, Soo-Haeng Cho)
   - Presented at WITS Feeder Workshop 2023, KrAIS Summer Workshop 2023, CIST 2023
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  Daegon Cho)
   - Presented at ICIS 2019, CIST 2020, BIGS 2021, WITS Feeder Workshop 2022
