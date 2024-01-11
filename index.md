@@ -26,7 +26,7 @@ classes: wide
 
 # Teaching
 * Instructor, UNIST School of Business Administration
-  - MGT201 Management Information Systems (62 undergraduate students, Fall 2023)
+  - MGT201 Management Information Systems (62 undergraduate students, Fall 2023) (4.88/5.0)
 
 # Awards 
 * [Best Overall](https://devpost.com/software/toward-better-validation-and-interpretation-of-robyn){: target="_blank"}, Meta APAC Robyn Hackathon, 2022
