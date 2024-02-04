@@ -19,14 +19,13 @@ classes: wide
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  Daegon Cho)
   - Under revision for resubmission to _Manufacturing & Service Operations Management_
   - Presented at ICIS 2019, CIST 2020, BIGS 2021, WITS Feeder Workshop 2022
-* **Volatile Exchange Rates and Multiple Reference Points: A Case Study of a Blockchain-Based Metaverse Platform**
 
 # Other Publications
 * Chihong Jeon, **Euro Bae**, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/download.php?bo_table=B34_1&wr_id=9&no=1){: target="_blank"} (_in Korean_)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
 
 # Teaching
 * Instructor, UNIST School of Business Administration
-  - MGT201 Management Information Systems (62 undergraduate students, Fall 2023) (4.88/5.0)
+  - MGT201 Management Information Systems (Fall 2023, 4.88/5.0)
 
 # Awards 
 * [Best Overall](https://devpost.com/software/toward-better-validation-and-interpretation-of-robyn){: target="_blank"}, Meta APAC Robyn Hackathon, 2022
