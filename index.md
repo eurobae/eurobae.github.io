@@ -11,7 +11,7 @@ classes: wide
   - B.S. in Industrial & Management Engineering (2014-2018)
 
 # Research Interests
-* Platform Economics, User Engagement, Econometric Analysis
+* Platforms, User Engagement, Econometric Analysis
 
 # Working Papers
 * **Two Sides of Same-Day Delivery: Evaluating the Distributional Effects of Platform Fulfillment on Third-Party Sales** (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, Yeongwoo Kim)
