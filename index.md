@@ -14,7 +14,7 @@ classes: wide
 * Platforms, User Engagement, Econometric Analysis
 
 # Working Papers
-* **Two Sides of Same-Day Delivery: Evaluating the Distributional Effects of Platform Fulfillment on Third-Party Sales** (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, Yeongwoo Kim)
+* [Two Sides of Same-Day Delivery: Evaluating the Distributional Effects of Platform Fulfillment on Third-Party Sales](https://papers.ssrn.com/abstract=4854395){: target="_blank"} (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, Yeongwoo Kim)
   - Presented at CIST 2023
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  Daegon Cho)
   - Under revision for resubmission to _Manufacturing & Service Operations Management_
