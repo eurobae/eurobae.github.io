@@ -21,7 +21,7 @@ classes: wide
   - Presented at ICIS 2019, CIST 2020, BIGS 2021
 
 # Other Publications
-* Chihong Jeon, **Euro Bae**, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain](https://sksecenter.kaist.ac.kr/bbs/download.php?bo_table=B34_1&wr_id=9&no=1){: target="_blank"} (_in Korean_)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
+* Chihong Jeon, **Euro Bae**, Daegon Cho. (2020). "[We Buy Your Inconvenience: When a Social Venture Meets Blockchain] (_in Korean_)," SK Center for Social Entrepreneurship Case Paper Series 1(4), pp.92-110, Seoul, Korea.
 
 # Teaching
 * Instructor, UNIST School of Business Administration
