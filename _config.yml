@@ -122,10 +122,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/eurobae"
+      # url: "https://github.com/eurobae"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/eurobae"
+      # url: "https://instagram.com/eurobae"
 
 # Site Footer
 footer:
