@@ -21,6 +21,10 @@ classes: wide
   - Under revision for resubmission to _Manufacturing & Service Operations Management_
   - Presented at ICIS 2019 and CIST 2020
 
+# Work in Progress
+* **Ad Aversion and In-App Purchases** (with Joonhyuk Yang, Sunghan Ryu)
+  - Conditionally accepted at ICIS 2024
+
 # Teaching
 * Instructor, UNIST School of Business Administration
   - MGT201 Management Information Systems (Fall 2023, 4.88/5.0)
