@@ -6,9 +6,9 @@ classes: wide
 # Education
 * **KAIST College of Business**
   - Ph.D. Candidate in Management Engineering (2020-Present)
-  - M.S. in Management Engineering (2018-2020)
+  - M.S. in Management Engineering
 * **POSTECH**
-  - B.S. in Industrial & Management Engineering (2014-2018)
+  - B.S. in Industrial & Management Engineering
 
 # Research Interests
 * Platforms, User Engagement, Econometric Analysis
