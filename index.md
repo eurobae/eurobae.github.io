@@ -5,7 +5,7 @@ classes: wide
 ---
 # Education
 * **KAIST College of Business**
-  - Ph.D. Candidate in Management Engineering (2020-Present)
+  - Ph.D. Candidate in Management Engineering
   - M.S. in Management Engineering
 * **POSTECH**
   - B.S. in Industrial & Management Engineering
