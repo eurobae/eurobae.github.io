@@ -14,12 +14,16 @@ classes: wide
 * Platform Operations, User Engagement, Econometric Analysis
 
 # Working Papers
+* **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
+  - Under Major Revision at _Manufacturing & Service Operations Management_
 * [Two Sides of Same-Day Delivery: Evaluating the Distributional Effects of Platform Fulfillment on Third-Party Sales](https://papers.ssrn.com/abstract=4854395){: target="_blank"} (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, and Yeongwoo Kim)
-* **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee,  and Daegon Cho)
+  - In Preparation for Submission
 
 # Work in Progress
 * **Ad Aversion and In-App Purchases** (with Joonhyuk Yang and Sunghan Ryu)
   - Presented at ICIS 2024
+* **Data (Center) Economy: The Impact of Data Centers on Firm Performance in Developing Economies** (with Jiyong Park)
+  - Conditionally Accepted at AMCIS 2025
 
 # Teaching
 * Instructor, UNIST School of Business Administration
