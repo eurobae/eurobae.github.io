@@ -20,11 +20,11 @@ classes: wide
   - In Preparation for Submission
 
 # Work in Progress
-* **Ad Aversion and In-App Purchases** (with Joonhyuk Yang and Sunghan Ryu)
+* [Ad Aversion and In-App Purchases](https://aisel.aisnet.org/icis2024/user_behav/user_behav/25/){:target="_blank"} (with Joonhyuk Yang and Sunghan Ryu)
   - Presented at ICIS 2024
 * **Data (Center) Economy: The Impact of Data Centers on Firm Performance in Developing Economies** (with Jiyong Park)
-  - Conditionally Accepted at AMCIS 2025
+  - Accepted at AMCIS 2025
 
 # Teaching
 * Instructor, UNIST School of Business Administration
-  - MGT201 Management Information Systems (Fall 2023, 4.88/5.0)
+  - MGT201 Management Information Systems (Fall 2023, 4.88/5.00)
