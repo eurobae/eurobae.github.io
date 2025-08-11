@@ -12,7 +12,7 @@ classes: wide
   - B.S., Industrial and Management Engineering
 
 # Research Interests
-* E-Commerce, Online Marketplaces, Platform Operations
+* AI in Online Marketplaces, Data-Driven Platform Design, E-Commerce, Platform Operations
 
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
@@ -21,6 +21,10 @@ classes: wide
 * [Two Sides of Same-Day Delivery: Evaluating the Spillover Effects of Platform Fulfillment on Third-Party Sales](https://papers.ssrn.com/abstract=4854395){: target="_blank"} (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, and Yeongwoo Kim)
   - Under review at _Manufacturing & Service Operations Management_
   - Presented at CIST 2023 and INFORMS Annual Meeting 2024
+
+# Work in Progress
+* AI Agents in Sponsored Advertising
+* Pitfalls of Quantity-Based AI Content Limits: Evidence from Amazon's Daily Three-Book Cap
 
 # Teaching
 * Instructor, UNIST School of Business Administration
