@@ -23,8 +23,12 @@ classes: wide
   - Presented at CIST 2023 and INFORMS Annual Meeting 2024
 
 # Work in Progress
-* AI Agents in Sponsored Advertising
-* Pitfalls of Quantity-Based AI Content Limits: Evidence from Amazon's Daily Three-Book Cap
+* **AI Agents in Sponsored Advertising**
+* **Pitfalls of Quantity-Based AI Content Limits**
+
+# Conference Proceedings
+* Jiyong Park, Euro Bae. [Data (Center) Economy: The Impact of Data Centers on Firm Performance in Developing Economies](https://aisel.aisnet.org/amcis2025/ict_global/ict_global/5/){: target="_blank"}. _Americas' Conference on Information Systems 2025 Proceedings_ 5.
+* Euro Bae, Joonhyuk Yang, Sunghan Ryu. [Ad Aversion and In-App Purchases](https://aisel.aisnet.org/icis2024/user_behav/user_behav/25/){: target="_blank"}. _International Conference on Information Systems 2024 Proceedings_ 25.
 
 # Teaching
 * Instructor, UNIST School of Business Administration
