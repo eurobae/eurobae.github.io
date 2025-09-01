@@ -17,7 +17,7 @@ classes: wide
 # Working Papers
 * **Will Cryptocurrency-Based Loyalty Programs Thrive as Coin Prices Rise? Empirical Evidence from a Ride-Hailing Platform** (with Hyeokkoo Eric Kwon, Jaywon Lee, and Daegon Cho)
   - Under _Major Revision_ for the 3rd round review at _Manufacturing & Service Operations Management_
-  - Presented at ICIS 2019, CIST 2020, and BIGS 2021
+  - Presented at ICIS 2019 and BIGS 2021 and accepted at CIST 2025
 * [**Two Sides of Same-Day Delivery: Evaluating the Spillover Effects of Platform Fulfillment on Third-Party Sales**](https://papers.ssrn.com/abstract=4854395){: target="_blank"} (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, and Yeongwoo Kim)
   - Under the 1st round review at _Manufacturing & Service Operations Management_
   - Presented at CIST 2023 and INFORMS Annual Meeting 2024
