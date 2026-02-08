@@ -28,7 +28,6 @@ classes: wide
 * **Pitfalls of Quantity-Based AI Content Limits**
 
 # Conference Proceedings
-* Jiyong Park, Euro Bae. [Data (Center) Economy: The Impact of Data Centers on Firm Performance in Developing Economies](https://aisel.aisnet.org/amcis2025/ict_global/ict_global/5/){: target="_blank"}. _Americas' Conference on Information Systems 2025 Proceedings_ 5.
 * Euro Bae, Joonhyuk Yang, Sunghan Ryu. [Ad Aversion and In-App Purchases](https://aisel.aisnet.org/icis2024/user_behav/user_behav/25/){: target="_blank"}. _International Conference on Information Systems 2024 Proceedings_ 25.
 * Euro Bae, Daegon Cho. [Do Token Incentives Work? An Empirical Study on a Ride-Hailing Platform](https://aisel.aisnet.org/icis2019/blockchain_fintech/blockchain_fintech/5/){: target="_blank"}. _International Conference on Information Systems 2019 Proceedings_ 5.
 
