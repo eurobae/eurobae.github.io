@@ -18,8 +18,8 @@ classes: wide
   - Under revision for the 3rd round review at _Manufacturing & Service Operations Management_
      - 1st decision: Reject and Resubmit; 2nd decision: Major Revision
   - Presented at CIST 2025
-* [**Two Sides of Same-Day Delivery: Evaluating the Spillover Effects of Platform Fulfillment on Third-Party Sales**](https://papers.ssrn.com/abstract=4854395){: target="_blank"} (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, and Yeongwoo Kim)
-  - In preparation for resubmission to _Manufacturing & Service Operations Management_
+* **Two Sides of Same-Day Delivery: Evaluating the Spillover Effects of Platform Fulfillment on Third-Party Sales** (with Daegon Cho, Soo-Haeng Cho, Jin Soo Han, and Yeongwoo Kim)
+  - Under revision for resubmission to _Manufacturing & Service Operations Management_
      - 1st decision: Reject and Resubmit
   - Presented at CIST 2023 and INFORMS Annual Meeting 2024
 
